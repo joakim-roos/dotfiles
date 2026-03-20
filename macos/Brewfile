@@ -1,0 +1,49 @@
+tap "github/gh"
+
+# GitHub command-line tool
+brew "gh"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# YAML Parser
+brew "libyaml"
+# Port scanning utility for large networks
+brew "nmap"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Internet file retriever
+brew "wget"
+# Linter for YAML files
+brew "yamllint"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Command-line fuzzy finder
+brew "fzf"
+# Add GitHub support to git on the command-line
+brew "hub"
+# Cross-shell prompt
+brew "starship"
+
+# Web browser
+cask "google-chrome"
+# App to write, plan, collaborate, and get organized
+cask "notion"
+# Email Client integrated with Notion Workspace"
+cask "notion-mail"
+# Mesh VPN based on WireGuard
+cask "tailscale-app"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
+# Team communication and collaboration software
+cask "slack"
+# Cloud storage by Proton
+cask "proton-drive"
+# Email client by Proton
+cask "proton-mail"
+# Password manager by Proton
+cask "proton-pass"
+# Spotify obviously
+# cask "spotify"

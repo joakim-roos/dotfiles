@@ -1,0 +1,17 @@
+cursor-style = block
+shell-integration-features = no-cursor
+font-family = TX-02
+font-size = 18
+term=xterm-256color
+macos-titlebar-style = tabs
+window-width = 1000
+window-height = 1000
+theme = tokyonight
+window-padding-x = 10
+window-padding-y = 10,0
+window-padding-balance = true
+# window-padding-color = extend
+window-decoration = none
+confirm-close-surface = false
+copy-on-select = clipboard
+mouse-shift-capture = false
