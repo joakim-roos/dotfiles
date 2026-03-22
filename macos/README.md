@@ -32,9 +32,19 @@ $ gpg --list-secret-keys --keyid-format=long  # note the key ID after rsa4096/
 $ git config --global user.signingkey <KEY_ID>
 $ git config --global commit.gpgsign true
 $ git config --global gpg.program $(which gpg)
+$ # configure pinentry-mac for GPG passphrase prompts
+$ echo "pinentry-program /opt/homebrew/bin/pinentry-mac" > ~/.gnupg/gpg-agent.conf
+$ gpgconf --kill gpg-agent
+$ export GPG_TTY=$(tty)
 $ # configure git author (use GitHub noreply email to keep your email private)
 $ git config --global user.name "jr"
 $ git config --global user.email "joakim-roos@users.noreply.github.com"
+$ # test gpg signing
+$ mkdir -p /tmp/test
+$ cd $_
+$ git init
+$ git commit --allow-empty -m 'signsss'
+$ git log --show-signature
 $ # reboot
 $ sudo reboot
 ```

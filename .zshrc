@@ -24,6 +24,7 @@ alias ...="cd ../.."
 
 # Git aliases
 alias gp="git push"
+alias gpl="git pull"
 alias gpr="git pull --rebase"
 alias gs="git status"
 alias glo="git log --oneline"
