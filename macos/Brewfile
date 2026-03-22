@@ -12,6 +12,8 @@ brew "libyaml"
 brew "nmap"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Terminal multiplexer
+brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Internet file retriever
