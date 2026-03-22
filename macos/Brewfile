@@ -33,6 +33,8 @@ cask "google-chrome"
 cask "notion"
 # Email Client integrated with Notion Workspace"
 cask "notion-mail"
+# Calendar app integrated with Notion
+cask "notion-calendar"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
 # Move and resize windows using keyboard shortcuts or snap areas
