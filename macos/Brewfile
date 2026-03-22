@@ -30,6 +30,8 @@ brew "starship"
 brew "neovim"
 # Parser generator tool and incremental parsing library
 brew "tree-sitter"
+# Tree-sitter CLI
+brew "tree-sitter-cli"
 
 # Web browser
 cask "google-chrome"
