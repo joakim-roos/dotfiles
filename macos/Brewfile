@@ -28,8 +28,8 @@ brew "hub"
 brew "starship"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Node Version Manager
-brew "nvm"
+# Parser generator tool and incremental parsing library
+brew "tree-sitter"
 
 # Web browser
 cask "google-chrome"
