@@ -26,6 +26,10 @@ brew "fzf"
 brew "hub"
 # Cross-shell prompt
 brew "starship"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Node Version Manager
+brew "nvm"
 
 # Web browser
 cask "google-chrome"
