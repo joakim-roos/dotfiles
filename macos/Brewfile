@@ -43,6 +43,8 @@ cask "notion-mail"
 cask "notion-calendar"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
+# Tiling window manager for macOS
+cask "aerospace"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Team communication and collaboration software
