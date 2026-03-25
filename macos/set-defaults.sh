@@ -98,6 +98,9 @@ defaults write NSGlobalDomain AppleAquaColorVariant -int 6
 echo "  › Set graphite highlight color"
 defaults write NSGlobalDomain AppleHighlightColor -string "0.847059 0.847059 0.862745"
 
+echo "  › Take screenshots as JPG"
+defaults write com.apple.screencapture type jpg
+
 echo "  › Show battery percent"
 defaults write com.apple.menuextra.battery ShowPercent -bool true
 
@@ -126,6 +129,9 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 echo "  › Set sidebar icon size to small"
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 
+echo "  › Show hidden files"
+defaults write com.apple.finder AppleShowAllFiles YES
+
 echo "  › Show status bar"
 defaults write com.apple.finder ShowStatusBar -bool true
 
@@ -152,6 +158,13 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 echo "  › Show all filename extensions"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+#############################
+
+echo ""
+echo "› Preview:"
+echo "  › Do not reopen previous files when opening a new one"
+defaults write com.apple.Preview ApplePersistenceIgnoreState YES
 
 #############################
 
