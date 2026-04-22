@@ -31,6 +31,11 @@ alias glo="git log --oneline"
 alias gc="git commit"
 alias ga="git add"
 alias c3000="lsof -ti :3000 | xargs kill"
+kp() {
+  local port=$1
+  lsof -ti:$port | xargs kill -9 2>/dev/null
+  lsof -ti:$port >/dev/null && echo "still running" || echo "port $port free"
+}
 
 # Manual beads backup to git (overrides BD_BACKUP_GIT_PUSH=false from .zshenv)
 alias bd-backup-push='BD_BACKUP_GIT_PUSH=true bd backup --force'
