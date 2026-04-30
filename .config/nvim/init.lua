@@ -599,7 +599,7 @@ require('lazy').setup({
       --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
       --  See `:help lsp-config` for information about keys and how to configure
       local servers = {
-        tsgo = {},
+        -- tsgo = {},
         vtsls = {},
         oxlint = {},
         -- clangd = {},
@@ -627,6 +627,7 @@ require('lazy').setup({
         'stylua', -- Used to format Lua code
         'oxfmt',
         'prettierd',
+        'jsonlint',
         -- You can add other tools here that you want Mason to install
       })
 
