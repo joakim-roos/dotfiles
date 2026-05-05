@@ -23,6 +23,7 @@ setup_project_windows() {
         tmux source-file "$directory/.tmux"
     else
       tmux new-window -t $session_name -n "terminal" -c $directory
+      tmux new-window -t $session_name -n "server" -c $directory
       tmux select-window -t $session_name:$window_name
     fi
 }
