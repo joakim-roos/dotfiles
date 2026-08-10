@@ -1,0 +1,5 @@
+eq_preset = "Custom"
+
+eq = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+speed = 1.00
+theme = "everforest"

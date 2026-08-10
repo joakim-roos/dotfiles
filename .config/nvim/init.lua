@@ -601,7 +601,11 @@ require('lazy').setup({
       local servers = {
         -- tsgo = {},
         vtsls = {},
-        oxlint = {},
+        oxlint = {
+          settings = {
+            typeAware = true,
+          },
+        },
         -- clangd = {},
         -- gopls = {},
         -- pyright = {},

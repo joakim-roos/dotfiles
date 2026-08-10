@@ -14,6 +14,8 @@ bindkey -M menuselect '\e' send-break
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
 
+export NODE_AUTH_TOKEN="$(gh auth token)"
+
 # Claude Code aliases
 alias ccc="claude --dangerously-skip-permissions"
 alias ccn="claude"
@@ -21,6 +23,9 @@ alias ccn="claude"
 # Navigation aliases
 alias ..="cd .."
 alias ...="cd ../.."
+
+# pnpm aliases
+alias p="pnpm"
 
 # Git aliases
 alias gp="git push"
@@ -40,10 +45,6 @@ kp() {
 # Manual beads backup to git (overrides BD_BACKUP_GIT_PUSH=false from .zshenv)
 alias bd-backup-push='BD_BACKUP_GIT_PUSH=true bd backup --force'
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # bun completions
 [ -s "/Users/jr/.bun/_bun" ] && source "/Users/jr/.bun/_bun"
 
@@ -58,3 +59,10 @@ export PATH="$HOME/go/bin:$PATH"
 
 # GPG
  export GPG_TTY=$(tty)
+
+# Pi
+export PATH="/Users/jr/.vite-plus/js_runtime/node/24.19.0/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
