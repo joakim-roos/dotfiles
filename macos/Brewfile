@@ -35,6 +35,8 @@ brew "tree-sitter"
 # Tree-sitter CLI
 brew "tree-sitter-cli"
 
+# macOS automation and microphone push-to-talk
+cask "hammerspoon"
 # Web browser
 cask "google-chrome"
 # App to write, plan, collaborate, and get organized

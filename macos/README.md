@@ -79,3 +79,27 @@ $ sudo reboot
 > ```console
 > $ gpg --export-secret-keys <KEY_ID> > ~/gpg-backup.key
 > ```
+
+## Hammerspoon
+
+The Brewfile installs Hammerspoon. Run `stow .` from the dotfiles root to link its configuration.
+Open Hammerspoon and enable it in **System Settings → Privacy & Security → Accessibility**.
+Restart Hammerspoon after you enable access. Hold Right Command to speak; release it to mute.
+
+
+### Raycast microphone commands
+
+In Raycast Settings, select **Extensions → Script Commands → Add Directories**.
+Add `~/.dotfiles/.config/raycast/scripts`.
+
+- **Enable Push to Talk** starts Hammerspoon and enables Right Command hold-to-talk.
+- **Disable Push to Talk** stops the listener and timer, then unmutes the default microphone at its saved volume.
+  This command also works when Hammerspoon is closed.
+
+The disable command builds its audio helper on first use. Xcode Command Line Tools must be installed, as shown above.
+The helper uses macOS Core Audio and requires no additional packages. Git ignores the compiled helper.
+
+Quitting Hammerspoon leaves the microphone muted. Use **Disable Push to Talk** to restore normal microphone use.
+The configuration controls the default microphone. Microphones without a mute control use input volume, which may not block all sound.
+
+To check the configuration without changing the live microphone, run `lua macos/tests/push-to-talk.lua` from the dotfiles root.
